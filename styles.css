@@ -48,8 +48,9 @@ main {
 }
 .masonry {
     display: grid;
-    grid-template-columns: (3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    flex: 1;
 }
 .masonry .grid-item {
     background: white;
@@ -64,6 +65,8 @@ main {
     grid-row: span 2;
 }
 .masonry .large {
+    grid-row: span 2;
+    grid-column: span 2;
 }
 .masonry .small {
 }
